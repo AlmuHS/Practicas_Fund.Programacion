@@ -1,0 +1,63 @@
+#include <iostream>
+using namespace std;
+
+
+#define MAXIMO 100
+class vector{
+int celda[MAXIMO];
+int nelem;
+public:
+vector (int n);
+vector (int n, int valores[]);
+int longitud();
+int get(int n);
+int &put(int n);
+};
+
+
+vector::vector(int n){
+nelem=n;
+}
+
+vector::vector(int n, int valores[]){
+nelem=n;
+for(int i=0; i<n; i++)
+celda[i]=valores[i];
+}
+
+
+int vector::longitud(){
+return nelem;
+}
+
+int vector::get(int n){
+return celda[n];
+}
+
+int& vector::put(int n){
+int refer=&celda[n];
+return refer;
+}
+
+
+int main()
+{
+int n, tabla[n];
+cout<<"Introduce el tamaño del vector: ";
+cin>>n;
+for (int i=0; i<n; i++){
+    cout<<"Introduce un valor: ";
+    cin>>tabla[i];
+}
+vector mi_vector(n, tabla[]);
+int casilla;
+cout<<"Introduce la celda de la que quieres mostrar el valor: ";
+cin>>casilla;
+int valor=mi_vector.get(casilla);
+cout<<"El valor de la celda "<<casilla<<" es: "<<valor;
+cout<<"Introduce una celda a referenciar: ";
+cin>>casilla;
+valor=mi_vector.put(casilla);
+cout<<"La referencia a la celda "<<casilla<<" es "<<valor;
+    return 0;
+}

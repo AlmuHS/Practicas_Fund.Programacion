@@ -1,0 +1,5 @@
+# depslib dependency file v1.0
+1328796877 source:/home/almu/ejercicios programacion/ejercicio4.3/main.cpp
+	<iostream>
+	<string.h>
+

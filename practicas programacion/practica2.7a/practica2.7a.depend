@@ -1,0 +1,5 @@
+# depslib dependency file v1.0
+1322523407 source:/home/almu/practica2.7a/main.cpp
+	<iostream>
+	<string.h>
+
