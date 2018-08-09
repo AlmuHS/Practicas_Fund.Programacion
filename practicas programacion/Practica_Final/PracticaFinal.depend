@@ -1,0 +1,5 @@
+# depslib dependency file v1.0
+1533854885 source:/home/almu/Practicas_Fund.Programacion/practicas programacion/Practica_Final/Main.cpp
+	<iostream>
+	<string.h>
+
